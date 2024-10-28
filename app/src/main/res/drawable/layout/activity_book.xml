@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161616"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".BookActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:text="Book-"
+            android:textColor="#FF9800"
+            android:textSize="24dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:fontFamily="@font/roboto_bold_italic"
+            android:text="Gym"
+            android:textColor="#fff"
+            android:textSize="24dp"
+            android:id="@+id/txtBookFacility"
+
+            />
+
+
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imgBook"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/gym" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Reservation Date : "/>
+        <ImageView
+            android:id="@+id/imgDate"
+            android:layout_marginTop="20dp"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:src="@drawable/baseline_calendar_today_24"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:textColor="#fff"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txtSelectedDate"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="StartTime : "/>
+        <ImageView
+            android:id="@+id/imgStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:src="@drawable/baseline_access_time_24"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:id="@+id/txtStartTime"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="EndTime : "/>
+        <ImageView
+            android:id="@+id/imgEndTime"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:src="@drawable/baseline_access_time_24"/>
+
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:id="@+id/txtEndTime"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="Cost : R"/>
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:id="@+id/txtCostPerHour"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Cost"
+        android:id="@+id/btnCalculateCost"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBookBook"
+        android:text="Book"/>
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
